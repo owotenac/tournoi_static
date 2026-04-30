@@ -3,10 +3,50 @@
   "jour": "Vendredi",
   "terrain": "Terrain A",
   "equipes": [
-    { "id": "T1", "nom": "Paris FC", "points": 6, "joues": 2, "gagnes": 2, "nuls": 0, "perdus": 0, "buts_pour": 8, "buts_contre": 2 },
-    { "id": "T2", "nom": "Lyon Girls", "points": 3, "joues": 2, "gagnes": 1, "nuls": 0, "perdus": 1, "buts_pour": 5, "buts_contre": 4 },
-    { "id": "T3", "nom": "Marseille FC", "points": 3, "joues": 2, "gagnes": 1, "nuls": 0, "perdus": 1, "buts_pour": 4, "buts_contre": 5 },
-    { "id": "T4", "nom": "Bordeaux FC", "points": 0, "joues": 2, "gagnes": 0, "nuls": 0, "perdus": 2, "buts_pour": 2, "buts_contre": 8 }
+    {
+      "id": "T1",
+      "nom": "Paris FC",
+      "points": 6,
+      "joues": 2,
+      "gagnes": 2,
+      "nuls": 0,
+      "perdus": 0,
+      "buts_pour": 8,
+      "buts_contre": 2
+    },
+    {
+      "id": "T2",
+      "nom": "Lyon Girls",
+      "points": 3,
+      "joues": 2,
+      "gagnes": 1,
+      "nuls": 0,
+      "perdus": 1,
+      "buts_pour": 5,
+      "buts_contre": 4
+    },
+    {
+      "id": "T3",
+      "nom": "Marseille FC",
+      "points": 6,
+      "joues": 2,
+      "gagnes": 2,
+      "nuls": 0,
+      "perdus": 1,
+      "buts_pour": 4,
+      "buts_contre": 5
+    },
+    {
+      "id": "T4",
+      "nom": "Bordeaux FC",
+      "points": 0,
+      "joues": 2,
+      "gagnes": 0,
+      "nuls": 0,
+      "perdus": 2,
+      "buts_pour": 2,
+      "buts_contre": 8
+    }
   ],
   "matchs": [
     {
