@@ -1,0 +1,67 @@
+{
+  "section": "U15F",
+  "jour": "Vendredi",
+  "terrain": "Terrain C",
+  "equipes": [
+    { "id": "T1", "nom": "Toulouse FC", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T2", "nom": "Nice Girls", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T3", "nom": "Strasbourg F", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T4", "nom": "Montpellier FC", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 }
+  ],
+  "matchs": [
+    {
+      "id": "M1",
+      "heure": "14:00",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M2",
+      "heure": "14:00",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M3",
+      "heure": "14:30",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M4",
+      "heure": "14:30",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M5",
+      "heure": "15:00",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M6",
+      "heure": "15:00",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    }
+  ]
+}

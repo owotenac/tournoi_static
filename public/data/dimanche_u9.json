@@ -1,0 +1,19 @@
+{
+  "section": "U9",
+  "jour": "Dimanche",
+  "terrain": "Terrain A",
+  "equipes": [
+    { "id": "T1", "nom": "Équipe A", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T2", "nom": "Équipe B", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T3", "nom": "Équipe C", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
+    { "id": "T4", "nom": "Équipe D", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 }
+  ],
+  "matchs": [
+    { "id": "M1", "heure": "10:00", "equipe_domicile": "T1", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" },
+    { "id": "M2", "heure": "10:00", "equipe_domicile": "T3", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" },
+    { "id": "M3", "heure": "10:20", "equipe_domicile": "T1", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" },
+    { "id": "M4", "heure": "10:20", "equipe_domicile": "T2", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" },
+    { "id": "M5", "heure": "10:40", "equipe_domicile": "T1", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" },
+    { "id": "M6", "heure": "10:40", "equipe_domicile": "T2", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null, "statut": "a_venir" }
+  ]
+}

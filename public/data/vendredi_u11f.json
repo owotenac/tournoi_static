@@ -1,0 +1,67 @@
+{
+  "section": "U11F",
+  "jour": "Vendredi",
+  "terrain": "Terrain A",
+  "equipes": [
+    { "id": "T1", "nom": "Paris FC", "points": 6, "joues": 2, "gagnes": 2, "nuls": 0, "perdus": 0, "buts_pour": 8, "buts_contre": 2 },
+    { "id": "T2", "nom": "Lyon Girls", "points": 3, "joues": 2, "gagnes": 1, "nuls": 0, "perdus": 1, "buts_pour": 5, "buts_contre": 4 },
+    { "id": "T3", "nom": "Marseille FC", "points": 3, "joues": 2, "gagnes": 1, "nuls": 0, "perdus": 1, "buts_pour": 4, "buts_contre": 5 },
+    { "id": "T4", "nom": "Bordeaux FC", "points": 0, "joues": 2, "gagnes": 0, "nuls": 0, "perdus": 2, "buts_pour": 2, "buts_contre": 8 }
+  ],
+  "matchs": [
+    {
+      "id": "M1",
+      "heure": "09:00",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T2",
+      "score_domicile": 3,
+      "score_exterieur": 1,
+      "statut": "termine"
+    },
+    {
+      "id": "M2",
+      "heure": "09:30",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T4",
+      "score_domicile": 2,
+      "score_exterieur": 0,
+      "statut": "termine"
+    },
+    {
+      "id": "M3",
+      "heure": "10:00",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "en_cours"
+    },
+    {
+      "id": "M4",
+      "heure": "10:00",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "en_cours"
+    },
+    {
+      "id": "M5",
+      "heure": "10:30",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    },
+    {
+      "id": "M6",
+      "heure": "10:30",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "statut": "a_venir"
+    }
+  ]
+}
