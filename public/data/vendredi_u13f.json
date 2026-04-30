@@ -1,67 +1,129 @@
 {
   "section": "U13F",
   "jour": "Vendredi",
-  "terrain": "Terrain B",
+  "terrain": "Terrain 1",
   "equipes": [
-    { "id": "T1", "nom": "Saint-Étienne F", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
-    { "id": "T2", "nom": "Nantes Girls", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
-    { "id": "T3", "nom": "Rennes FC", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 },
-    { "id": "T4", "nom": "Lille FC", "points": 0, "joues": 0, "gagnes": 0, "nuls": 0, "perdus": 0, "buts_pour": 0, "buts_contre": 0 }
+    {
+      "id": "T1",
+      "nom": "AS Canet"
+    },
+    {
+      "id": "T2",
+      "nom": "OJ Béziers"
+    },
+    {
+      "id": "T3",
+      "nom": "Pas du Loup"
+    },
+    {
+      "id": "T4",
+      "nom": "Thongue"
+    },
+    {
+      "id": "T5",
+      "nom": "3MTKD"
+    }
   ],
   "matchs": [
     {
       "id": "M1",
-      "heure": "09:00",
+      "heure": "09:50",
+      "terrain": "Terrain 1",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T2",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": null
     },
     {
       "id": "M2",
-      "heure": "09:00",
+      "heure": "09:50",
+      "terrain": "Terrain 2",
       "equipe_domicile": "T3",
       "equipe_exterieur": "T4",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": "T5"
     },
     {
       "id": "M3",
-      "heure": "09:30",
+      "heure": "10:50",
+      "terrain": "Terrain 1",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T3",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": null
     },
     {
       "id": "M4",
-      "heure": "09:30",
+      "heure": "10:50",
+      "terrain": "Terrain 2",
       "equipe_domicile": "T2",
-      "equipe_exterieur": "T4",
+      "equipe_exterieur": "T5",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": "T4"
     },
     {
       "id": "M5",
-      "heure": "10:00",
+      "heure": "11:50",
+      "terrain": "Terrain 1",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T4",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": null
     },
     {
       "id": "M6",
-      "heure": "10:00",
+      "heure": "11:50",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T2"
+    },
+    {
+      "id": "M7",
+      "heure": "13:50",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": null
+    },
+    {
+      "id": "M8",
+      "heure": "13:50",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T3"
+    },
+    {
+      "id": "M9",
+      "heure": "14:50",
+      "terrain": "Terrain 1",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T3",
       "score_domicile": null,
       "score_exterieur": null,
-      "statut": "a_venir"
+      "repos": null
+    },
+    {
+      "id": "M10",
+      "heure": "14:50",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T1"
     }
   ]
 }

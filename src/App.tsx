@@ -5,6 +5,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 interface Equipe {
   id: string;
   nom: string;
+}
+
+interface EquipeStat {
+  id: string;
+  nom: string;
   points: number;
   joues: number;
   gagnes: number;
@@ -12,6 +17,36 @@ interface Equipe {
   perdus: number;
   buts_pour: number;
   buts_contre: number;
+}
+
+function calcClassement(equipes: Equipe[], matchs: Match[]): EquipeStat[] {
+  const stats: Record<string, EquipeStat> = {};
+  for (const e of equipes) {
+    stats[e.id] = { id: e.id, nom: e.nom, points: 0, joues: 0, gagnes: 0, nuls: 0, perdus: 0, buts_pour: 0, buts_contre: 0 };
+  }
+  for (const m of matchs) {
+    if (m.score_domicile === null || m.score_exterieur === null) continue;
+    const dom = stats[m.equipe_domicile];
+    const ext = stats[m.equipe_exterieur];
+    if (!dom || !ext) continue;
+    dom.joues++; ext.joues++;
+    dom.buts_pour += m.score_domicile; dom.buts_contre += m.score_exterieur;
+    ext.buts_pour += m.score_exterieur; ext.buts_contre += m.score_domicile;
+    if (m.score_domicile > m.score_exterieur) {
+      dom.gagnes++; dom.points += 3; ext.perdus++;
+    } else if (m.score_domicile < m.score_exterieur) {
+      ext.gagnes++; ext.points += 3; dom.perdus++;
+    } else {
+      dom.nuls++; dom.points++; ext.nuls++; ext.points++;
+    }
+  }
+  return Object.values(stats).sort((a, b) => {
+    if (b.points !== a.points) return b.points - a.points;
+    const diffA = a.buts_pour - a.buts_contre;
+    const diffB = b.buts_pour - b.buts_contre;
+    if (diffB !== diffA) return diffB - diffA;
+    return b.buts_pour - a.buts_pour;
+  });
 }
 
 interface Match {
@@ -22,7 +57,7 @@ interface Match {
   equipe_exterieur: string;
   score_domicile: number | null;
   score_exterieur: number | null;
-  statut: 'a_venir' | 'en_cours' | 'termine';
+  repos?: string | null;
 }
 
 interface SectionData {
@@ -37,7 +72,7 @@ interface SectionData {
 
 const JOURS = [
   {
-    label: 'Vendredi',
+    label: 'Vendredi 1 Mai',
     emoji: '⚽',
     sections: [
       { key: 'vendredi_u11f', label: 'U11F' },
@@ -109,7 +144,7 @@ export default function App() {
       <div style={styles.header}>
         <div style={styles.headerTop}>
           <span style={styles.logo}>🏆</span>
-          <h1 style={styles.title}>Tournoi</h1>
+          <h1 style={styles.title}>Tournoi AS CANET</h1>
           <button style={styles.refreshBtn} onClick={fetchData} title="Actualiser">
             🔄
           </button>
@@ -221,7 +256,8 @@ function MatchCard({ match, equipeMap, defaultTerrain }: { match: Match; equipeM
   const dom = equipeMap[match.equipe_domicile] ?? match.equipe_domicile;
   const ext = equipeMap[match.equipe_exterieur] ?? match.equipe_exterieur;
   const terrain = match.terrain ?? defaultTerrain;
-  const hasScore = match.statut === 'termine' || match.statut === 'en_cours';
+  const hasScore = match.score_domicile !== null && match.score_exterieur !== null;
+  const reposNom = match.repos ? (equipeMap[match.repos] ?? match.repos) : null;
 
   return (
     <div style={styles.matchCard}>
@@ -239,6 +275,9 @@ function MatchCard({ match, equipeMap, defaultTerrain }: { match: Match; equipeM
         </div>
         <span style={{ ...styles.matchTeam, textAlign: 'right' }}>{ext}</span>
       </div>
+      {reposNom && (
+        <div style={styles.reposBadge}>😴 Repos : {reposNom}</div>
+      )}
     </div>
   );
 }
@@ -246,13 +285,7 @@ function MatchCard({ match, equipeMap, defaultTerrain }: { match: Match; equipeM
 // ─── Classement ──────────────────────────────────────────────────────────────
 
 function ClassementScreen({ data }: { data: SectionData }) {
-  const sorted = [...data.equipes].sort((a, b) => {
-    if (b.points !== a.points) return b.points - a.points;
-    const diffA = a.buts_pour - a.buts_contre;
-    const diffB = b.buts_pour - b.buts_contre;
-    if (diffB !== diffA) return diffB - diffA;
-    return b.buts_pour - a.buts_pour;
-  });
+  const sorted = calcClassement(data.equipes, data.matchs);
 
   return (
     <div>
@@ -274,7 +307,7 @@ function ClassementScreen({ data }: { data: SectionData }) {
   );
 }
 
-function ClassementRow({ equipe, rank }: { equipe: Equipe; rank: number }) {
+function ClassementRow({ equipe, rank }: { equipe: EquipeStat; rank: number }) {
   const diff = equipe.buts_pour - equipe.buts_contre;
   const isTop = rank === 1;
 
@@ -284,9 +317,9 @@ function ClassementRow({ equipe, rank }: { equipe: Equipe; rank: number }) {
       ...(isTop ? styles.classementRowTop : {}),
       ...(rank % 2 === 0 ? styles.classementRowEven : {}),
     }}>
-      <span style={{ flex: 0.4, textAlign: 'center', fontWeight: 700, color: isTop ? C.green : C.gray300 }}>
+      {/* <span style={{ flex: 0.4, textAlign: 'center', fontWeight: 700, color: isTop ? C.green : C.gray300 }}>
         {rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank}
-      </span>
+      </span> */}
       <span style={{ flex: 3, fontWeight: isTop ? 700 : 400, fontSize: 13, color: C.textDark }}>{equipe.nom}</span>
       <span style={{ flex: 0.6, textAlign: 'center', color: C.gray500, fontSize: 13 }}>{equipe.joues}</span>
       <span style={{ flex: 0.6, textAlign: 'center', color: C.green, fontSize: 13 }}>{equipe.gagnes}</span>
@@ -501,6 +534,12 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 13,
     fontWeight: 700,
     color: C.gray300,
+  },
+  reposBadge: {
+    marginTop: 8,
+    fontSize: 11,
+    color: C.gray500,
+    fontStyle: 'italic',
   },
   classementHeader: {
     display: 'flex',
