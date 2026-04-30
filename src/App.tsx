@@ -143,10 +143,10 @@ export default function App() {
       {/* Header */}
       <div style={styles.header}>
         <div style={styles.headerTop}>
-          <span style={styles.logo}>🏆</span>
+          <img style={styles.logo} src="/images/logo.png" alt="Logo" />
           <h1 style={styles.title}>Tournoi AS CANET</h1>
           <button style={styles.refreshBtn} onClick={fetchData} title="Actualiser">
-            🔄
+            <img style={styles.logo} src="/images/refresh.png" alt="Refresh" />
           </button>
         </div>
 
@@ -276,7 +276,7 @@ function MatchCard({ match, equipeMap, defaultTerrain }: { match: Match; equipeM
         <span style={{ ...styles.matchTeam, textAlign: 'right' }}>{ext}</span>
       </div>
       {reposNom && (
-        <div style={styles.reposBadge}>😴 Repos : {reposNom}</div>
+        <div style={styles.reposBadge}>Repos : {reposNom}</div>
       )}
     </div>
   );
@@ -315,7 +315,6 @@ function ClassementRow({ equipe, rank }: { equipe: EquipeStat; rank: number }) {
     <div style={{
       ...styles.classementRow,
       ...(isTop ? styles.classementRowTop : {}),
-      ...(rank % 2 === 0 ? styles.classementRowEven : {}),
     }}>
       {/* <span style={{ flex: 0.4, textAlign: 'center', fontWeight: 700, color: isTop ? C.green : C.gray300 }}>
         {rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank}
@@ -344,7 +343,7 @@ const C = {
   greenFaint: 'rgba(26,122,60,0.12)',
   greenBorder: 'rgba(26,122,60,0.3)',
   white: '#ffffff',
-  offWhite: '#f4f8f5',
+  offWhite: '#e6e6e6ff',
   gray100: '#e8efe9',
   gray300: '#b0c4b5',
   gray500: '#6b8f73',
@@ -379,7 +378,10 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 8,
     marginBottom: 12,
   },
-  logo: { fontSize: 24 },
+  logo: {
+    width: 50,
+    height: 50
+  },
   title: {
     margin: 0,
     fontSize: 22,
@@ -484,7 +486,7 @@ const styles: Record<string, React.CSSProperties> = {
     cursor: 'pointer',
   },
   heureLabel: {
-    fontSize: 13,
+    fontSize: 14,
     fontWeight: 700,
     color: C.gray500,
     letterSpacing: 1,
@@ -502,8 +504,8 @@ const styles: Record<string, React.CSSProperties> = {
     boxShadow: '0 1px 4px rgba(0,0,0,0.07)',
   },
   matchTerrain: {
-    fontSize: 11,
-    color: C.gray500,
+    fontSize: 12,
+    color: "black",
     marginBottom: 6,
     fontWeight: 500,
   },
@@ -514,7 +516,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   matchTeam: {
     flex: 1,
-    fontSize: 13,
+    fontSize: 17,
     fontWeight: 600,
     color: C.textDark,
     lineHeight: 1.2,
@@ -539,7 +541,7 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 8,
     fontSize: 11,
     color: C.gray500,
-    fontStyle: 'italic',
+    //fontStyle: 'italic',
   },
   classementHeader: {
     display: 'flex',
