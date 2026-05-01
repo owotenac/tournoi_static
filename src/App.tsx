@@ -25,6 +25,7 @@ function calcClassement(equipes: Equipe[], matchs: Match[]): EquipeStat[] {
     stats[e.id] = { id: e.id, nom: e.nom, points: 0, joues: 0, gagnes: 0, nuls: 0, perdus: 0, buts_pour: 0, buts_contre: 0 };
   }
   for (const m of matchs) {
+    if (m.type === 'finale') continue;
     if (m.score_domicile === null || m.score_exterieur === null) continue;
     const dom = stats[m.equipe_domicile];
     const ext = stats[m.equipe_exterieur];
@@ -58,6 +59,9 @@ interface Match {
   score_domicile: number | null;
   score_exterieur: number | null;
   repos?: string | null;
+  type?: 'finale' | null;
+  label_domicile?: string | null;
+  label_exterieur?: string | null;
 }
 
 interface SectionData {
@@ -71,23 +75,23 @@ interface SectionData {
 // ─── Config ──────────────────────────────────────────────────────────────────
 
 const JOURS = [
-  {
-    label: 'Vendredi 1 Mai',
-    emoji: '⚽',
-    sections: [
-      { key: 'vendredi_u11f', label: 'U11F' },
-      { key: 'vendredi_u13f', label: 'U13F' },
-      { key: 'vendredi_u15f', label: 'U15F' },
-    ],
-  },
   // {
-  //   label: 'Samedi',
+  //   label: 'Vendredi 1 Mai',
   //   emoji: '⚽',
   //   sections: [
-  //     { key: 'samedi_u7', label: 'U7' },
-  //     { key: 'samedi_u8', label: 'U8' },
+  //     { key: 'vendredi_u11f', label: 'U11F' },
+  //     { key: 'vendredi_u13f', label: 'U13F' },
+  //     { key: 'vendredi_u15f', label: 'U15F' },
   //   ],
   // },
+  {
+    label: 'Samedi 2 mai',
+    emoji: '⚽',
+    sections: [
+      { key: 'samedi_u7', label: 'U7' },
+      { key: 'samedi_u8', label: 'U8' },
+    ],
+  },
   // {
   //   label: 'Dimanche',
   //   emoji: '⚽',
@@ -253,15 +257,20 @@ function PlanningScreen({ data }: { data: SectionData }) {
 }
 
 function MatchCard({ match, equipeMap, defaultTerrain }: { match: Match; equipeMap: Record<string, string>; defaultTerrain: string }) {
-  const dom = equipeMap[match.equipe_domicile] ?? match.equipe_domicile;
-  const ext = equipeMap[match.equipe_exterieur] ?? match.equipe_exterieur;
+  const dom = match.label_domicile ?? equipeMap[match.equipe_domicile] ?? match.equipe_domicile;
+  const ext = match.label_exterieur ?? equipeMap[match.equipe_exterieur] ?? match.equipe_exterieur;
   const terrain = match.terrain ?? defaultTerrain;
   const hasScore = match.score_domicile !== null && match.score_exterieur !== null;
   const reposNom = match.repos ? (equipeMap[match.repos] ?? match.repos) : null;
+  const isFinale = match.type === 'finale';
 
   return (
-    <div style={styles.matchCard}>
+    <div style={{
+      ...styles.matchCard,
+      ...(isFinale ? styles.matchCardFinale : {}),
+    }}>
       <div style={styles.matchTerrain}>📍 {terrain}</div>
+      {isFinale && <div style={styles.finaleBadge}>🏆 Phase Finale</div>}
       <div style={styles.matchRow}>
         <span style={styles.matchTeam}>{dom}</span>
         <div style={styles.scoreBox}>
@@ -417,9 +426,9 @@ const styles: Record<string, React.CSSProperties> = {
   sectionRow: { display: 'flex', gap: 6, paddingBottom: 12 },
   sectionBtn: {
     flex: 1,
-    padding: '5px 0',
+    padding: '9px 0',
     background: 'rgba(255,255,255,0.1)',
-    border: '1px solid rgba(255,255,255,0.15)',
+    border: '1px solid rgba(52, 243, 84, 1)',
     borderRadius: 6,
     color: 'rgba(255,255,255,0.5)',
     fontSize: 12,
@@ -575,5 +584,17 @@ const styles: Record<string, React.CSSProperties> = {
     color: C.gray300,
     textAlign: 'center',
     marginTop: 16,
+  },
+  matchCardFinale: {
+    borderLeft: `4px solid #f59e0b`,
+    background: '#fffbeb',
+  },
+  finaleBadge: {
+    fontSize: 11,
+    fontWeight: 700,
+    color: '#f59e0b',
+    letterSpacing: 0.5,
+    textTransform: 'uppercase' as const,
+    marginBottom: 4,
   },
 };
