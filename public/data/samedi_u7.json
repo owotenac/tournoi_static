@@ -65,7 +65,7 @@
     },
     {
       "id": "M5",
-      "heure": "14:40",
+      "heure": "13:50",
       "terrain": "Terrain 1",
       "equipe_domicile": "T4",
       "equipe_exterieur": "T5",
@@ -74,7 +74,7 @@
     },
     {
       "id": "M6",
-      "heure": "14:40",
+      "heure": "13:50",
       "terrain": "Terrain 2",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T3",
@@ -84,7 +84,7 @@
     },
     {
       "id": "M7",
-      "heure": "15:00",
+      "heure": "14:30",
       "terrain": "Terrain 1",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T4",
@@ -93,7 +93,7 @@
     },
     {
       "id": "M8",
-      "heure": "15:00",
+      "heure": "14:30",
       "terrain": "Terrain 2",
       "equipe_domicile": "T3",
       "equipe_exterieur": "T5",
@@ -103,7 +103,7 @@
     },
     {
       "id": "M9",
-      "heure": "15:30",
+      "heure": "15:00",
       "terrain": "Terrain 1",
       "equipe_domicile": "T4",
       "equipe_exterieur": "T1",
@@ -112,7 +112,7 @@
     },
     {
       "id": "M10",
-      "heure": "15:30",
+      "heure": "15:00",
       "terrain": "Terrain 2",
       "equipe_domicile": "T5",
       "equipe_exterieur": "T2",
@@ -121,8 +121,8 @@
       "repos": "T3"
     },
     {
-      "id": "M16",
-      "heure": "16:00",
+      "id": "M11",
+      "heure": "15:30",
       "terrain": "Terrain 1",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T2",
@@ -133,8 +133,8 @@
       "label_exterieur": "2ème"
     },
     {
-      "id": "M17",
-      "heure": "16:00",
+      "id": "M12",
+      "heure": "15:30",
       "terrain": "Terrain 2",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T2",
