@@ -9,23 +9,19 @@
     },
     {
       "id": "T2",
-      "nom": "ESC 34"
-    },
-    {
-      "id": "T3",
       "nom": "AS Canet 2"
     },
     {
+      "id": "T3",
+      "nom": "Béziers"
+    },
+    {
       "id": "T4",
-      "nom": "Gignac"
+      "nom": "ESC 34"
     },
     {
       "id": "T5",
-      "nom": "AS Béziers 1"
-    },
-    {
-      "id": "T6",
-      "nom": "Béziers 2"
+      "nom": "Gignac"
     }
   ],
   "matchs": [
@@ -45,124 +41,84 @@
       "equipe_domicile": "T3",
       "equipe_exterieur": "T4",
       "score_domicile": null,
-      "score_exterieur": null
+      "score_exterieur": null,
+      "repos": "T5"
     },
     {
       "id": "M3",
-      "heure": "12:00",
-      "terrain": "Terrain 3",
+      "heure": "12:30",
+      "terrain": "Terrain 1",
       "equipe_domicile": "T5",
-      "equipe_exterieur": "T6",
+      "equipe_exterieur": "T1",
       "score_domicile": null,
       "score_exterieur": null
     },
     {
       "id": "M4",
       "heure": "12:30",
-      "terrain": "Terrain 1",
-      "equipe_domicile": "T1",
-      "equipe_exterieur": "T4",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T3",
       "score_domicile": null,
-      "score_exterieur": null
+      "score_exterieur": null,
+      "repos": "T4"
     },
     {
       "id": "M5",
-      "heure": "12:30",
-      "terrain": "Terrain 2",
-      "equipe_domicile": "T2",
-      "equipe_exterieur": "T6",
+      "heure": "14:30",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
       "score_domicile": null,
       "score_exterieur": null
     },
     {
       "id": "M6",
-      "heure": "12:30",
-      "terrain": "Terrain 3",
-      "equipe_domicile": "T3",
-      "equipe_exterieur": "T5",
+      "heure": "14:30",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
       "score_domicile": null,
-      "score_exterieur": null
+      "score_exterieur": null,
+      "repos": "T2"
     },
     {
       "id": "M7",
-      "heure": "14:30",
+      "heure": "15:00",
       "terrain": "Terrain 1",
-      "equipe_domicile": "T1",
-      "equipe_exterieur": "T6",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T4",
       "score_domicile": null,
       "score_exterieur": null
     },
     {
       "id": "M8",
-      "heure": "14:30",
+      "heure": "15:00",
       "terrain": "Terrain 2",
-      "equipe_domicile": "T4",
+      "equipe_domicile": "T3",
       "equipe_exterieur": "T5",
       "score_domicile": null,
-      "score_exterieur": null
+      "score_exterieur": null,
+      "repos": "T1"
     },
     {
       "id": "M9",
-      "heure": "14:30",
-      "terrain": "Terrain 3",
-      "equipe_domicile": "T2",
-      "equipe_exterieur": "T3",
+      "heure": "15:30",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T1",
       "score_domicile": null,
       "score_exterieur": null
     },
     {
       "id": "M10",
-      "heure": "15:00",
-      "terrain": "Terrain 1",
-      "equipe_domicile": "T1",
-      "equipe_exterieur": "T5",
-      "score_domicile": null,
-      "score_exterieur": null
-    },
-    {
-      "id": "M11",
-      "heure": "15:00",
-      "terrain": "Terrain 2",
-      "equipe_domicile": "T6",
-      "equipe_exterieur": "T3",
-      "score_domicile": null,
-      "score_exterieur": null
-    },
-    {
-      "id": "M12",
-      "heure": "15:00",
-      "terrain": "Terrain 3",
-      "equipe_domicile": "T4",
-      "equipe_exterieur": "T2",
-      "score_domicile": null,
-      "score_exterieur": null
-    },
-    {
-      "id": "M13",
-      "heure": "15:30",
-      "terrain": "Terrain 1",
-      "equipe_domicile": "T1",
-      "equipe_exterieur": "T3",
-      "score_domicile": null,
-      "score_exterieur": null
-    },
-    {
-      "id": "M14",
       "heure": "15:30",
       "terrain": "Terrain 2",
       "equipe_domicile": "T5",
       "equipe_exterieur": "T2",
       "score_domicile": null,
-      "score_exterieur": null
-    },
-    {
-      "id": "M15",
-      "heure": "15:30",
-      "terrain": "Terrain 3",
-      "equipe_domicile": "T6",
-      "equipe_exterieur": "T4",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_exterieur": null,
+      "repos": "T3"
     },
     {
       "id": "M16",
@@ -187,18 +143,6 @@
       "type": "finale",
       "label_domicile": "3ème",
       "label_exterieur": "4ème"
-    },
-    {
-      "id": "M18",
-      "heure": "16:00",
-      "terrain": "Terrain 3",
-      "equipe_domicile": "T1",
-      "equipe_exterieur": "T2",
-      "score_domicile": null,
-      "score_exterieur": null,
-      "type": "finale",
-      "label_domicile": "5ème",
-      "label_exterieur": "6ème"
     }
   ]
 }
