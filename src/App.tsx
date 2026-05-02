@@ -84,21 +84,21 @@ const JOURS = [
   //     { key: 'vendredi_u15f', label: 'U15F' },
   //   ],
   // },
-  {
-    label: 'Samedi 2 mai',
-    emoji: '⚽',
-    sections: [
-      { key: 'samedi_u7', label: 'U7' },
-      { key: 'samedi_u8', label: 'U8' },
-    ],
-  },
   // {
-  //   label: 'Dimanche',
+  //   label: 'Samedi 2 mai',
   //   emoji: '⚽',
   //   sections: [
-  //     { key: 'dimanche_u9', label: 'U9' },
+  //     { key: 'samedi_u7', label: 'U7' },
+  //     { key: 'samedi_u8', label: 'U8' },
   //   ],
   // },
+  {
+    label: 'Dimanche 3 mai',
+    emoji: '⚽',
+    sections: [
+      { key: 'dimanche_u9', label: 'U9' },
+    ],
+  },
 ];
 
 // ─── App ─────────────────────────────────────────────────────────────────────
