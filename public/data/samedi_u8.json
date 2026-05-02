@@ -138,8 +138,8 @@
       "score_domicile": null,
       "score_exterieur": null,
       "type": "finale",
-      "label_domicile": "1er",
-      "label_exterieur": "2ème"
+      "label_domicile": "ESC 34",
+      "label_exterieur": "AS Canet 1"
     },
     {
       "id": "M14",
@@ -150,8 +150,8 @@
       "score_domicile": null,
       "score_exterieur": null,
       "type": "finale",
-      "label_domicile": "3ème",
-      "label_exterieur": "4ème"
+      "label_domicile": "Plaissan",
+      "label_exterieur": "AS Canet 2"
     }
   ]
 }
