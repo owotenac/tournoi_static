@@ -97,6 +97,7 @@ const JOURS = [
     emoji: '⚽',
     sections: [
       { key: 'dimanche_u9', label: 'U9' },
+      { key: 'dimanche_u9_apm', label: 'U9 Foot 8' },
     ],
   },
 ];
