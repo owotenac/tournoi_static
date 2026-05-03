@@ -41,7 +41,7 @@
     },
     {
       "id": "M3",
-      "heure": "13:55",
+      "heure": "14:00",
       "terrain": "Terrain 1 (Foot à 8)",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T3",
@@ -50,7 +50,7 @@
     },
     {
       "id": "M4",
-      "heure": "13:55",
+      "heure": "14:00",
       "terrain": "Terrain 2 (Foot à 8)",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T4",
@@ -59,7 +59,7 @@
     },
     {
       "id": "M5",
-      "heure": "14:20",
+      "heure": "14:30",
       "terrain": "Terrain 1 (Foot à 8)",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T4",
@@ -68,7 +68,7 @@
     },
     {
       "id": "M6",
-      "heure": "14:20",
+      "heure": "14:30",
       "terrain": "Terrain 2 (Foot à 8)",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T3",
@@ -77,7 +77,7 @@
     },
     {
       "id": "M7",
-      "heure": "14:45",
+      "heure": "15:00",
       "terrain": "Terrain 1 (Foot à 8)",
       "type": "finale",
       "label_domicile": "1er",
@@ -89,7 +89,7 @@
     },
     {
       "id": "M8",
-      "heure": "14:45",
+      "heure": "15:00",
       "terrain": "Terrain 2 (Foot à 8)",
       "type": "finale",
       "label_domicile": "3ème",
