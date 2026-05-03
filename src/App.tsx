@@ -549,7 +549,7 @@ const styles: Record<string, React.CSSProperties> = {
   reposBadge: {
     marginTop: 8,
     fontSize: 11,
-    color: C.gray500,
+    color: "black",
     //fontStyle: 'italic',
   },
   classementHeader: {

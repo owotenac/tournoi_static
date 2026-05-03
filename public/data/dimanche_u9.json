@@ -3,69 +3,231 @@
   "jour": "Dimanche",
   "terrain": "Terrain 1",
   "equipes": [
-    { "id": "T1", "nom": "Canet 1"   },
-    { "id": "T2", "nom": "Canet 2"   },
-    { "id": "T3", "nom": "Gignac 1"  },
-    { "id": "T4", "nom": "Gignac 2"  },
-    { "id": "T5", "nom": "Aniane 1"  },
-    { "id": "T6", "nom": "Aniane 2"  },
-    { "id": "T7", "nom": "Lodévois"  }
+    {
+      "id": "T1",
+      "nom": "Canet 1"
+    },
+    {
+      "id": "T2",
+      "nom": "Canet 2"
+    },
+    {
+      "id": "T3",
+      "nom": "Gignac 1"
+    },
+    {
+      "id": "T4",
+      "nom": "Gignac 2"
+    },
+    {
+      "id": "T5",
+      "nom": "Aniane 1"
+    },
+    {
+      "id": "T6",
+      "nom": "Aniane 2"
+    },
+    {
+      "id": "T7",
+      "nom": "Lodévois Larzac"
+    }
   ],
   "matchs": [
-    { "id": "M1",  "heure": "09:30", "terrain": "Terrain 1", "equipe_domicile": "T1", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null },
-    { "id": "M2",  "heure": "09:30", "terrain": "Terrain 2", "equipe_domicile": "T2", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null },
-    { "id": "M3",  "heure": "09:30", "terrain": "Terrain 3", "equipe_domicile": "T6", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null, "repos": "T4" },
-
-    { "id": "M4",  "heure": "09:50", "terrain": "Terrain 1", "equipe_domicile": "T4", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null },
-    { "id": "M5",  "heure": "09:50", "terrain": "Terrain 2", "equipe_domicile": "T3", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M6",  "heure": "09:50", "terrain": "Terrain 3", "equipe_domicile": "T5", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null, "repos": "T7" },
-
-    { "id": "M7",  "heure": "10:10", "terrain": "Terrain 1", "equipe_domicile": "T7", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null },
-    { "id": "M8",  "heure": "10:10", "terrain": "Terrain 2", "equipe_domicile": "T1", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null },
-    { "id": "M9",  "heure": "10:10", "terrain": "Terrain 3", "equipe_domicile": "T3", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null, "repos": "T2" },
-
-    { "id": "M10", "heure": "10:30", "terrain": "Terrain 1", "equipe_domicile": "T2", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null },
-    { "id": "M11", "heure": "10:30", "terrain": "Terrain 2", "equipe_domicile": "T5", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null },
-    { "id": "M12", "heure": "10:30", "terrain": "Terrain 3", "equipe_domicile": "T6", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null, "repos": "T3" },
-
-    { "id": "M13", "heure": "10:50", "terrain": "Terrain 1", "equipe_domicile": "T3", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null },
-    { "id": "M14", "heure": "10:50", "terrain": "Terrain 2", "equipe_domicile": "T2", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null },
-    { "id": "M15", "heure": "10:50", "terrain": "Terrain 3", "equipe_domicile": "T4", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null, "repos": "T1" },
-
-    { "id": "M16", "heure": "11:10", "terrain": "Terrain 1", "equipe_domicile": "T1", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M17", "heure": "11:10", "terrain": "Terrain 2", "equipe_domicile": "T5", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null },
-    { "id": "M18", "heure": "11:10", "terrain": "Terrain 3", "equipe_domicile": "T6", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null, "repos": "T3" },
-
-    { "id": "M19", "heure": "11:30", "terrain": "Terrain 1", "equipe_domicile": "T3", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null },
-    { "id": "M20", "heure": "11:30", "terrain": "Terrain 2", "equipe_domicile": "T4", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M21", "heure": "11:30", "terrain": "Terrain 3", "equipe_domicile": "T7", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null, "repos": "T6" },
-
-    { "id": "M22", "heure": "13:30", "terrain": "Terrain 1", "equipe_domicile": "T3", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null },
-    { "id": "M23", "heure": "13:30", "terrain": "Terrain 2", "equipe_domicile": "T5", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M24", "heure": "13:30", "terrain": "Terrain 3", "equipe_domicile": "T7", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null, "repos": "T4" },
-
-    { "id": "M25", "heure": "13:50", "terrain": "Terrain 1", "equipe_domicile": "T1", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null },
-    { "id": "M26", "heure": "13:50", "terrain": "Terrain 2", "equipe_domicile": "T2", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null },
-    { "id": "M27", "heure": "13:50", "terrain": "Terrain 3", "equipe_domicile": "T6", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null, "repos": "T7" },
-
-    { "id": "M28", "heure": "14:10", "terrain": "Terrain 1", "equipe_domicile": "T4", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null },
-    { "id": "M29", "heure": "14:10", "terrain": "Terrain 2", "equipe_domicile": "T5", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null },
-    { "id": "M30", "heure": "14:10", "terrain": "Terrain 3", "equipe_domicile": "T6", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null, "repos": "T2" },
-
-    { "id": "M31", "heure": "14:30", "terrain": "Terrain 1", "equipe_domicile": "T7", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M32", "heure": "14:30", "terrain": "Terrain 2", "equipe_domicile": "T4", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null },
-    { "id": "M33", "heure": "14:30", "terrain": "Terrain 3", "equipe_domicile": "T1", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null, "repos": "T3" },
-
-    { "id": "M34", "heure": "14:50", "terrain": "Terrain 1", "equipe_domicile": "T7", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null },
-    { "id": "M35", "heure": "14:50", "terrain": "Terrain 2", "equipe_domicile": "T6", "equipe_exterieur": "T2", "score_domicile": null, "score_exterieur": null },
-    { "id": "M36", "heure": "14:50", "terrain": "Terrain 3", "equipe_domicile": "T5", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null, "repos": "T1" },
-
-    { "id": "M37", "heure": "15:10", "terrain": "Terrain 1", "equipe_domicile": "T2", "equipe_exterieur": "T1", "score_domicile": null, "score_exterieur": null },
-    { "id": "M38", "heure": "15:10", "terrain": "Terrain 2", "equipe_domicile": "T7", "equipe_exterieur": "T5", "score_domicile": null, "score_exterieur": null },
-    { "id": "M39", "heure": "15:10", "terrain": "Terrain 3", "equipe_domicile": "T4", "equipe_exterieur": "T6", "score_domicile": null, "score_exterieur": null, "repos": "T3" },
-
-    { "id": "M40", "heure": "15:30", "terrain": "Terrain 1", "equipe_domicile": "T5", "equipe_exterieur": "T3", "score_domicile": null, "score_exterieur": null },
-    { "id": "M41", "heure": "15:30", "terrain": "Terrain 2", "equipe_domicile": "T2", "equipe_exterieur": "T4", "score_domicile": null, "score_exterieur": null },
-    { "id": "M42", "heure": "15:30", "terrain": "Terrain 3", "equipe_domicile": "T1", "equipe_exterieur": "T7", "score_domicile": null, "score_exterieur": null, "repos": "T6" }
+    {
+      "id": "M1",
+      "heure": "09:30",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M2",
+      "heure": "09:30",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M3",
+      "heure": "09:30",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T6",
+      "equipe_exterieur": "T7",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T4"
+    },
+    {
+      "id": "M4",
+      "heure": "09:50",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T1",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M5",
+      "heure": "09:50",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M6",
+      "heure": "09:50",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T7"
+    },
+    {
+      "id": "M7",
+      "heure": "10:10",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T7",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M8",
+      "heure": "10:10",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M9",
+      "heure": "10:10",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T2"
+    },
+    {
+      "id": "M10",
+      "heure": "10:30",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T7",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M11",
+      "heure": "10:30",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M12",
+      "heure": "10:30",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T6",
+      "equipe_exterieur": "T1",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T3"
+    },
+    {
+      "id": "M13",
+      "heure": "10:50",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T7",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M14",
+      "heure": "10:50",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M15",
+      "heure": "10:50",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T1"
+    },
+    {
+      "id": "M16",
+      "heure": "11:10",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M17",
+      "heure": "11:10",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T7",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M18",
+      "heure": "11:10",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T6",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T3"
+    },
+    {
+      "id": "M19",
+      "heure": "11:30",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M20",
+      "heure": "11:30",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M21",
+      "heure": "11:30",
+      "terrain": "Terrain 3",
+      "equipe_domicile": "T7",
+      "equipe_exterieur": "T1",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T6"
+    }
   ]
 }
