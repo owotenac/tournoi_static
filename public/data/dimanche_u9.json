@@ -123,8 +123,8 @@
       "terrain": "Terrain 1",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T7",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 0,
+      "score_exterieur": 4
     },
     {
       "id": "M11",
@@ -132,8 +132,8 @@
       "terrain": "Terrain 2",
       "equipe_domicile": "T5",
       "equipe_exterieur": "T4",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 0,
+      "score_exterieur": 8
     },
     {
       "id": "M12",
@@ -141,8 +141,8 @@
       "terrain": "Terrain 3",
       "equipe_domicile": "T6",
       "equipe_exterieur": "T1",
-      "score_domicile": null,
-      "score_exterieur": null,
+      "score_domicile": 0,
+      "score_exterieur": 5,
       "repos": "T3"
     },
     {
