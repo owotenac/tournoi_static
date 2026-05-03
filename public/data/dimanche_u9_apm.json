@@ -27,8 +27,8 @@
       "terrain": "Terrain 1 (Foot à 8)",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T2",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 5,
+      "score_exterieur": 0
     },
     {
       "id": "M2",
@@ -36,8 +36,8 @@
       "terrain": "Terrain 2 (Foot à 8)",
       "equipe_domicile": "T3",
       "equipe_exterieur": "T4",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 6,
+      "score_exterieur": 0
     },
     {
       "id": "M3",
