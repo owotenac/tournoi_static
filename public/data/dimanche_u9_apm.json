@@ -63,8 +63,8 @@
       "terrain": "Terrain 1 (Foot à 8)",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T4",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 2,
+      "score_exterieur": 0
     },
     {
       "id": "M6",
@@ -72,18 +72,16 @@
       "terrain": "Terrain 2 (Foot à 8)",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T3",
-      "score_domicile": null,
-      "score_exterieur": null
+      "score_domicile": 0,
+      "score_exterieur": 4
     },
     {
       "id": "M7",
       "heure": "14:30",
       "terrain": "Terrain 1 (Foot à 8)",
       "type": "finale",
-      "label_domicile": "1er",
-      "label_exterieur": "2ème",
       "equipe_domicile": "T1",
-      "equipe_exterieur": "T2",
+      "equipe_exterieur": "T3",
       "score_domicile": null,
       "score_exterieur": null
     },
@@ -92,9 +90,7 @@
       "heure": "14:30",
       "terrain": "Terrain 2 (Foot à 8)",
       "type": "finale",
-      "label_domicile": "3ème",
-      "label_exterieur": "4ème",
-      "equipe_domicile": "T3",
+      "equipe_domicile": "T2",
       "equipe_exterieur": "T4",
       "score_domicile": null,
       "score_exterieur": null
