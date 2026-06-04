@@ -43,8 +43,8 @@
       "terrain": "Terrain 1",
       "equipe_domicile": "T1",
       "equipe_exterieur": "T8",
-      "score_domicile": 1,
-      "score_exterieur": 0
+      "score_domicile": null,
+      "score_exterieur": null
     },
     {
       "id": "M2",
