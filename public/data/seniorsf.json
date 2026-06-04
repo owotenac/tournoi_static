@@ -1,0 +1,153 @@
+{
+  "section": "seniorsf",
+  "jour": "Samedi",
+  "terrain": "Complexe Sportif",
+  "equipes": [
+    {
+      "id": "T1",
+      "nom": "AS Canet"
+    },
+    {
+      "id": "T2",
+      "nom": "Paulhan"
+    },
+    {
+      "id": "T3",
+      "nom": "St Pargoire"
+    },
+    {
+      "id": "T4",
+      "nom": "Vapero"
+    },
+    {
+      "id": "T5",
+      "nom": "Laverune"
+    }
+  ],
+  "matchs": [
+    {
+      "id": "M1",
+      "heure": "16:00",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T1"
+    },
+    {
+      "id": "M2",
+      "heure": "16:00",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T1"
+    },
+    {
+      "id": "M3",
+      "heure": "16:22",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T4"
+    },
+    {
+      "id": "M4",
+      "heure": "16:22",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T4"
+    },
+    {
+      "id": "M5",
+      "heure": "16:44",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T2"
+    },
+    {
+      "id": "M6",
+      "heure": "16:44",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T2"
+    },
+    {
+      "id": "M7",
+      "heure": "17:06",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T5"
+    },
+    {
+      "id": "M8",
+      "heure": "17:06",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T5"
+    },
+    {
+      "id": "M9",
+      "heure": "17:28",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T3"
+    },
+    {
+      "id": "M10",
+      "heure": "17:28",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "repos": "T3"
+    },
+    {
+      "id": "M11",
+      "heure": "18:00",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "label_domicile": "1er",
+      "label_exterieur": "2ème",
+      "type": "finale"
+    },
+    {
+      "id": "M12",
+      "heure": "18:00",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "3ème",
+      "equipe_exterieur": "4ème",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "label_domicile": "3ème",
+      "label_exterieur": "4ème",
+      "type": "finale"
+    }
+  ]
+}

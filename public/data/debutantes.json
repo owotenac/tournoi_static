@@ -1,0 +1,168 @@
+{
+  "section": "debutantes",
+  "jour": "Samedi",
+  "terrain": "Complexe Sportif",
+  "equipes": [
+    {
+      "id": "T1",
+      "nom": "Zumba"
+    },
+    {
+      "id": "T2",
+      "nom": "Credit agricole"
+    },
+    {
+      "id": "T3",
+      "nom": "Veille vertes"
+    },
+    {
+      "id": "T4",
+      "nom": "Agde"
+    },
+    {
+      "id": "T5",
+      "nom": "Laverune"
+    },
+    {
+      "id": "T6",
+      "nom": "Les Gazelles"
+    }
+  ],
+  "matchs": [
+    {
+      "id": "M1",
+      "heure": "18:00",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M2",
+      "heure": "18:00",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M3",
+      "heure": "18:19",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M4",
+      "heure": "18:19",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M5",
+      "heure": "18:38",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T6",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M6",
+      "heure": "18:38",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T2",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M7",
+      "heure": "18:57",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T4",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M8",
+      "heure": "18:57",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M9",
+      "heure": "19:16",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T6",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M10",
+      "heure": "19:16",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T3",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M11",
+      "heure": "19:35",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M12",
+      "heure": "19:35",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T5",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M13",
+      "heure": "19:54",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T1",
+      "equipe_exterieur": "T2",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M14",
+      "heure": "19:54",
+      "terrain": "Terrain 2",
+      "equipe_domicile": "T3",
+      "equipe_exterieur": "T6",
+      "score_domicile": null,
+      "score_exterieur": null
+    },
+    {
+      "id": "M15",
+      "heure": "20:13",
+      "terrain": "Terrain 1",
+      "equipe_domicile": "T4",
+      "equipe_exterieur": "T5",
+      "score_domicile": null,
+      "score_exterieur": null
+    }
+  ]
+}

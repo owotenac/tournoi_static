@@ -93,11 +93,12 @@ const JOURS = [
   //   ],
   // },
   {
-    label: 'Dimanche 3 mai',
+    label: 'Samedi 6 Juin',
     emoji: '⚽',
     sections: [
-      { key: 'dimanche_u9', label: 'U9' },
-      { key: 'dimanche_u9_apm', label: 'U9 Foot 8' },
+      { key: 'U18F', label: 'U18' },
+      { key: 'seniorsf', label: 'Seniors' },
+      { key: 'debutantes', label: 'Débutantes' },
     ],
   },
 ];
@@ -149,7 +150,7 @@ export default function App() {
       <div style={styles.header}>
         <div style={styles.headerTop}>
           <img style={styles.logo} src="/images/logo.png" alt="Logo" />
-          <h1 style={styles.title}>Tournoi AS CANET</h1>
+          <h1 style={styles.title}>Tournoi Pauline</h1>
           <button style={styles.refreshBtn} onClick={fetchData} title="Actualiser">
             <img style={styles.logo} src="/images/refresh.png" alt="Refresh" />
           </button>
