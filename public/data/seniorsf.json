@@ -31,8 +31,8 @@
       "terrain": "Terrain 1",
       "equipe_domicile": "T2",
       "equipe_exterieur": "T5",
-      "score_domicile": null,
-      "score_exterieur": null,
+      "score_domicile": 0,
+      "score_exterieur": 0,
       "repos": "T1"
     },
     {
@@ -41,8 +41,8 @@
       "terrain": "Terrain 2",
       "equipe_domicile": "T3",
       "equipe_exterieur": "T4",
-      "score_domicile": null,
-      "score_exterieur": null,
+      "score_domicile": 1,
+      "score_exterieur": 1,
       "repos": "T1"
     },
     {
