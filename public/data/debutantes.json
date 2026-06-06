@@ -152,8 +152,8 @@
       "terrain": "Terrain 2",
       "equipe_domicile": "T3",
       "equipe_exterieur": "T6",
-      "score_domicile": 2,
-      "score_exterieur": 0
+      "score_domicile": 0,
+      "score_exterieur": 2
     },
     {
       "id": "M15",
